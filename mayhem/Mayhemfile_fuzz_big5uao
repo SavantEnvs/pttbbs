@@ -1,0 +1,9 @@
+project: savantenvs/pttbbs
+target: fuzz_big5uao
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_big5uao/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_big5uao
+    libfuzzer: true
+    timeout: 10

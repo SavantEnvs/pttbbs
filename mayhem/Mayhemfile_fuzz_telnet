@@ -1,0 +1,9 @@
+project: savantenvs/pttbbs
+target: fuzz_telnet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_telnet/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_telnet
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,8 @@
+From x Fri
+Content-Type: multipart/mixed; boundary=B
+
+--B
+Content-Type: text/html
+
+<p>a</p>
+--B--

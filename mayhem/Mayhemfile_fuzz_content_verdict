@@ -1,0 +1,9 @@
+project: savantenvs/pttbbs
+target: fuzz_content_verdict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_content_verdict/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_content_verdict
+    libfuzzer: true
+    timeout: 10
